@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c465ba3-3d99-455f-a534-cf5b168eaa1c" name="Changes" comment="Add addProduct &amp; deleteProduct">
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/ProductControllerTest.java" afterDir="false" />
+    <list default="true" id="8c465ba3-3d99-455f-a534-cf5b168eaa1c" name="Changes" comment="Add test addProduct">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/ProductControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
@@ -65,7 +70,7 @@
       <recent name="com.example.backend" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductControllerTest.addProduct">
+  <component name="RunManager" selected="JUnit.ProductControllerTest.deleteProduct">
     <configuration name="ProductControllerTest.addProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <extension name="coverage">
@@ -77,6 +82,22 @@
       <option name="PACKAGE_NAME" value="com.example.backend" />
       <option name="MAIN_CLASS_NAME" value="com.example.backend.ProductControllerTest" />
       <option name="METHOD_NAME" value="addProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductControllerTest.deleteProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.example.backend.ProductControllerTest" />
+      <option name="METHOD_NAME" value="deleteProduct" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -94,6 +115,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductControllerTest.deleteProduct" />
         <item itemvalue="JUnit.ProductControllerTest.addProduct" />
       </list>
     </recent_temporary>
@@ -106,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675616821094</updated>
-      <workItem from="1675616821887" duration="5387000" />
+      <workItem from="1675616821887" duration="7091000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1675622878177</created>
@@ -122,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675625874952</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add test addProduct">
+      <created>1675627082828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1675627082828</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,6 +181,7 @@
     </ignored-roots>
     <MESSAGE value="Init project" />
     <MESSAGE value="Add addProduct &amp; deleteProduct" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add addProduct &amp; deleteProduct" />
+    <MESSAGE value="Add test addProduct" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test addProduct" />
   </component>
 </project>

@@ -8,6 +8,7 @@ import org.springframework.http.MediaType;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.web.servlet.MockMvc;
 
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -19,6 +20,8 @@ class ProductControllerTest {
     MockMvc mockMvc;
     @Autowired
     ProductRepository productRepository;
+    @Autowired
+    IDGeneratorService idGeneratorService;
 
     @Test
     @DirtiesContext
@@ -35,6 +38,20 @@ class ProductControllerTest {
                         "quantity": 5
                         }
                         """));
+
+    }
+    @Test
+    @DirtiesContext
+    void deleteProduct() throws Exception {
+        Product newProduct = new Product("10", "name", 5);
+        productRepository.save(newProduct);
+        mockMvc.perform(delete("/api/products/10").contentType(MediaType.APPLICATION_JSON)
+                        .content("""
+                                {"name": "Sofa Steffanie",
+                                "quantity": 5
+                                }
+                                """))
+                .andExpect(status().isOk());
 
     }
 }
