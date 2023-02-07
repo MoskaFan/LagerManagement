@@ -8,10 +8,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.web.servlet.MockMvc;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -52,6 +51,25 @@ class ProductControllerTest {
                                 }
                                 """))
                 .andExpect(status().isOk());
+
+
+    }
+    @Test
+    @DirtiesContext
+    void getAllProducts() throws Exception {
+        Product newProduct1 = new Product("10", "name2", 5);
+        Product newProduct2 = new Product("13", "name3", 10);
+        productRepository.save(newProduct1);
+        productRepository.save(newProduct2);
+        mockMvc.perform(get("/api/products/"))
+                .andExpect(status().isOk())
+                .andExpect(content().json("""
+                        [{"name": "name2",
+                        "quantity": 5
+                        }, {"name": "name3",
+                        "quantity": 10
+                        }]
+                        """));
 
     }
 }

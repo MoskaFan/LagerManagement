@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8c465ba3-3d99-455f-a534-cf5b168eaa1c" name="Changes" comment="Add test addProduct">
+    <list default="true" id="8c465ba3-3d99-455f-a534-cf5b168eaa1c" name="Changes" comment="Add test deleteProduct">
+      <change afterPath="$PROJECT_DIR$/frontend/src/ProductCard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/ProductGallery.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/ProductInfo.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/example/backend/ProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/ProductControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/test/java/com/example/backend/ProductControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +24,8 @@
         <option value="Class" />
         <option value="Record" />
         <option value="JUnit5 Test Class" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -59,6 +66,7 @@
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "C:\\Users\\496355\\IdeaProjects\\LagerManagement\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,7 +78,22 @@
       <recent name="com.example.backend" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ProductControllerTest.deleteProduct">
+  <component name="RunManager" selected="JUnit.ProductControllerTest.getAllProducts">
+    <configuration name="ProductControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.example.backend.ProductControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProductControllerTest.addProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="backend" />
       <extension name="coverage">
@@ -103,6 +126,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductControllerTest.getAllProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.backend" />
+      <option name="MAIN_CLASS_NAME" value="com.example.backend.ProductControllerTest" />
+      <option name="METHOD_NAME" value="getAllProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
@@ -115,7 +154,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ProductControllerTest.getAllProducts" />
         <item itemvalue="JUnit.ProductControllerTest.deleteProduct" />
+        <item itemvalue="JUnit.ProductControllerTest" />
         <item itemvalue="JUnit.ProductControllerTest.addProduct" />
       </list>
     </recent_temporary>
@@ -128,7 +169,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675616821094</updated>
-      <workItem from="1675616821887" duration="7091000" />
+      <workItem from="1675616821887" duration="11184000" />
     </task>
     <task id="LOCAL-00001" summary="Init project">
       <created>1675622878177</created>
@@ -151,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675627082828</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add test deleteProduct">
+      <created>1675628365747</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675628365747</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +230,7 @@
     <MESSAGE value="Init project" />
     <MESSAGE value="Add addProduct &amp; deleteProduct" />
     <MESSAGE value="Add test addProduct" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add test addProduct" />
+    <MESSAGE value="Add test deleteProduct" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add test deleteProduct" />
   </component>
 </project>
